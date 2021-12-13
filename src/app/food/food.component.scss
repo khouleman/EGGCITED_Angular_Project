@@ -277,17 +277,10 @@ body {
 
 /* .........../Food Menu/............ */
 
-.food-menu-heading {
-  text-align: center;
-  font-size: 3.4rem;
-  font-weight: 400;
-  color: #666;
-}
-
 .food-menu-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 0px 30px 0px;
+  padding: 30px 0px 30px 0px;
 }
 
 .food-menu-container img {
@@ -303,11 +296,12 @@ body {
   display: flex;
   flex: 1 1 600px;
   justify-content: space-evenly;
-  margin-bottom: 3rem;
+  //margin-bottom: 3rem;
 }
 
 .food-description {
   margin: auto 1.5rem;
+  width: 800px;
 }
 
 .font-title {
@@ -317,14 +311,17 @@ body {
 }
 
 .food-description p {
-  font-size: 1.4rem;
-  color: #555;
+  font-size: 1.1rem;
+  color: #16a083;
   font-weight: 500;
 }
 
 .food-description .food-price {
-  color: #117964;
-  font-weight: 700;
+  color: #0c5345;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* ........./ Testimonial /.......... */
@@ -641,6 +638,60 @@ body {
   }
 }
 
-.mt-75 {
-  margin-top: 75px;
+.space-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.border-menu {
+  border: 1px solid #16a083;
+  border-radius: 51px;
+  margin: 15px 0;
+}
+
+.w630px {
+  width: 65%;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.img-food-list {
+  max-height: 25px;
+  width: auto !important;
+  padding-right: 5px;
+  border-radius: unset !important;
+}
+
+.content-country {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.pr-5 {
+  padding-right: 5px;
+  color: #131313;
+}
+
+.content-description {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: flex-start;
+  margin: 5px 0;
+}
+
+.change {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background-color: rgba(206, 0, 0, 0.7);
+  border: 1px solid #c3e6cb;
+  padding: 20px;
+  border-radius: 10px;
 }

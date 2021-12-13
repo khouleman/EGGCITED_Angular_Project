@@ -1,0 +1,14 @@
+<h2 class="food-menu-heading">Food Menu</h2>
+<ul class="list-group" *ngIf="foods">
+  <app-food *ngFor="let food of foods; let i = index"
+            [foodName]="food.name"
+            [foodPicture]="food.picture"
+            [foodCountry]="food.country"
+            [foodCategory]="food.category"
+            [foodCreator]="food.creator"
+            [foodReleaseDate]="food.releaseDate"
+            [foodDescription]="food.description"
+            [foodIngredients]="food.ingredients"
+            [foodTimePreparation]="food.timePreparation"
+            [id]="food.id"></app-food>
+</ul>
