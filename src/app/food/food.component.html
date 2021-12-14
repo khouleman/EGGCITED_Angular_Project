@@ -1,3 +1,4 @@
+<body>
 <div class="row change" *ngIf="suppri">
   <div class="col-12">
     The dish will be deleted in 3 seconds.
@@ -5,49 +6,50 @@
 </div>
 <section id="food-menu">
   <div class="border-menu">
-  <div class="food-menu-container container">
-    <div class="food-menu-item">
-      <div class="food-img">
-        <img class="img-perso" [src]="foodPicture" alt="">
-      </div>
-      <div class="food-description">
-        <div class="space-title">
-          <h2 class="food-titile w630px">{{ foodName }}</h2>
-          <p class="food-titile content-country"><img class="img-food-list" src="/assets/food-list/time.svg" alt="">
-            <span class="pr-5">Preparation Time </span>
-            {{ foodTimePreparation }}
-          </p>
+    <div class="food-menu-container container">
+      <div class="food-menu-item">
+        <div class="food-img">
+          <img class="img-perso" [src]="foodPicture" alt="">
         </div>
-        <div>
+        <div class="food-description">
           <div class="space-title">
-            <p class="content-country w630px">
-              <img class="img-food-list" src="/assets/food-list/country.svg" alt="">
-              <span class="pr-5">Country :</span> {{foodCountry}}
-            </p>
-            <p class="content-country">
-              <img class="img-food-list" src="/assets/food-list/list.svg" alt="">
-              <span class="pr-5">Category :</span> {{foodCategory}}
+            <h2 class="food-titile w630px">{{ foodName }}</h2>
+            <p class="food-titile content-country"><img class="img-food-list" src="/assets/food-list/time.svg" alt="">
+              <span class="pr-5">Preparation Time </span>
+              {{ foodTimePreparation }}
             </p>
           </div>
-          <p class="content-country">
-            <img class="img-food-list" src="/assets/food-list/ingredients.svg" alt="">
-            <span class="pr-5">Ingredients:</span> {{foodIngredients}}
-          </p>
-          <p class="content-description">
-            <img class="img-food-list" src="/assets/food-list/description.svg" alt="">
-            <span class="pr-5">Description:</span> {{foodDescription}}
-          </p>
-          <p class="food-price mt-10 content-country">
-            <img class="img-food-list" src="/assets/food-list/user.svg" alt="">
-            Made by {{foodCreator}} at {{foodReleaseDate}}
-          </p>
-          <div class="col-6 space-title">
-            <a [routerLink]="['/modif', id]" class="btn btn-primary">Modify</a>
-            <button class="btn btn-danger" (click)="suppr()">Remove</button>
+          <div>
+            <div class="space-title">
+              <p class="content-country w630px">
+                <img class="img-food-list" src="/assets/food-list/country.svg" alt="">
+                <span class="pr-5">Country :</span> {{foodCountry}}
+              </p>
+              <p class="content-country">
+                <img class="img-food-list" src="/assets/food-list/list.svg" alt="">
+                <span class="pr-5">Category :</span> {{foodCategory}}
+              </p>
+            </div>
+            <p class="content-country">
+              <img class="img-food-list" src="/assets/food-list/ingredients.svg" alt="">
+              <span class="pr-5">Ingredients:</span> {{foodIngredients}}
+            </p>
+            <p class="content-description">
+              <img class="img-food-list" src="/assets/food-list/description.svg" alt="">
+              <span class="pr-5">Description:</span> {{foodDescription}}
+            </p>
+            <p class="food-price mt-10 content-country">
+              <img class="img-food-list" src="/assets/food-list/user.svg" alt="">
+              Made by {{foodCreator}} at {{foodReleaseDate}}
+            </p>
+            <div class="col-6 space-title">
+              <a [routerLink]="['/modif', id]" class="btn btn-primary">Modify</a>
+              <button class="btn btn-danger" (click)="suppr()">Remove</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 </section>
+</body>

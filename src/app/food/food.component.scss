@@ -16,13 +16,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* ///////////..utility classes../////////// */
-
 .container {
   max-width: 1200px;
   width: 90%;
   margin: auto;
 }
+
 
 .btn {
   display: inline-block;
@@ -45,10 +44,6 @@ body {
   background: #117964;
   transition: background 0.3s ease-in-out;
 }
-
-/* ............/navbar/............ *
-
-/* desktop mode............/// */
 
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
@@ -103,8 +98,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* ............//// Showcase styling ////......... */
-
 .showcase-area {
   height: 50vh;
   background: linear-gradient(
@@ -130,8 +123,6 @@ body {
   text-transform: uppercase;
   margin-top: 1.5em;
 }
-
-/* ......//about us//...... */
 
 #about {
   padding: 50px 0;
@@ -193,8 +184,6 @@ body {
   object-fit: cover;
   object-position: right;
 }
-
-/* ..........////Food category///........... */
 
 #food {
   padding: 5rem 0 10rem 0;
