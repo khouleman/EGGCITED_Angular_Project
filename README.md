@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Project to learn Angular
 
 This project is around food and more precisely about dishes. I made it to learn Angular.
+This project take around 10 hours.
 
 ## Development server
 
