@@ -12,7 +12,7 @@ import { FoodListComponent } from './food-list/food-list.component';
 import { FoodModifComponent } from './food-modif/food-modif.component';
 import { FoodNewComponent } from './food-new/food-new.component';
 import {FoodService} from "./services/food/food.service";
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import {FoodService} from "./services/food/food.service";
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     FormsModule,
     AngularFirestoreModule,
