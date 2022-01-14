@@ -9,7 +9,6 @@ import {Router} from '@angular/router';
   styleUrls: ['./food-new.component.scss']
 })
 export class FoodNewComponent implements OnInit {
-
   new: boolean = false;
 
   public food!: Food;
