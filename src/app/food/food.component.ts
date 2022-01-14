@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FoodService} from "../services/food/food.service";
-
+import {ActivatedRoute} from "@angular/router";
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-food',
   templateUrl: './food.component.html',
@@ -21,17 +22,22 @@ export class FoodComponent implements OnInit {
   @Input() foodTimePreparation?: string;
   @Input() id?: string ;
 
-  constructor( private Food: FoodService) { }
+  constructor( private Food: FoodService,
+               private router: Router) { }
 
   ngOnInit(): void {
   }
 
+
   suppr(){
-    this.suppri = true;
-    setTimeout(() => {
-      this.suppri = false;
-      this.Food.delete(this.id)
-    }, 3000);
+    if(confirm("Are you sure to remove ?")) {
+      this.suppri = true;
+        this.suppri = false;
+        this.Food.delete(this.id)
+    } else {
+      this.router.navigate(['/food']);
+    }
+
 
 
   }
