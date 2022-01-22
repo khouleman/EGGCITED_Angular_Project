@@ -1,11 +1,13 @@
-# AngularLPWeb
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.13.
-
 ## Project to learn Angular
 
 This project is around food and more precisely about dishes. I made it to learn Angular.
 This project take around 10 hours.
+
+Homapage                   |  Dish list                   |  New Dish
+:-------------------------:|:---------------------------: |:---------------------------:
+![](/img-git/homepage.png) |![](/img-git/food-menu.png)   | ![](/img-git/new-dish.png)
+
+
 
 ## Development server
 
